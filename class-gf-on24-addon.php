@@ -6,8 +6,8 @@ class GFOn24AddOn extends GFFeedAddOn
 {
     protected $_version = GF_ON24_ADDON_VERSION;
     protected $_min_gravityforms_version = '1.9.16';
-    protected $_slug = 'gf-on24-addon';
-    protected $_path = 'rxb-gf-on24-addon/gf-on24-addon.php';
+    protected $_slug = 'gravityforms-addon-on24';
+    protected $_path = 'gravityforms-addon-on24/gravityforms-addon-on24.php';
     protected $_full_path = __FILE__;
     protected $_title = 'Gravity Forms On24 Add-On';
     protected $_short_title = 'On24 Add-On';
