@@ -1,0 +1,27 @@
+name: Create Release Assets
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+
+      - name: "Zip plugin"
+        uses: thedoctor0/zip-release@0.7.1
+        with:
+          type: "zip"
+          path: "./"
+          filename: "./packages/gravityforms-addon-on24.zip"
+          exclusions: "/packages/* *.git*"
+
+      - name: Upload release binaries
+        uses: alexellis/upload-assets@0.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          asset_paths: '["./packages/*.zip"]'
