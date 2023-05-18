@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Gravity Forms On24 Add-On
-Plugin URI: https://kinetic.com
+Plugin URI: https://github.com/KineticTeam/gravityforms-addon-on24
 Description: Allows Gravity Forms integration with the On24 API
-Version: 1.0.0
+Version: 1.0.1
 Author: Kinetic
 Author URI: https://kinetic.com
 */
 
-define('GF_ON24_ADDON_VERSION', '1.0.0');
+define('GF_ON24_ADDON_VERSION', '1.0.1');
 
 add_action('gform_loaded', ['GF_On24_AddOn_Bootstrap', 'load'], 5);
 
