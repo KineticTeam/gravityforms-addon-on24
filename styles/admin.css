@@ -1,0 +1,8 @@
+.gform-settings-field__header {
+  padding: 1rem;
+  background-color: #f6f9fc;
+}
+
+.gform-settings-panel__content textarea[name="_gform_setting_eventUrl"] {
+  height: 2.75rem;
+}
