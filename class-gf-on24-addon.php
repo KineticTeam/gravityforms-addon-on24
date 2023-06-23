@@ -189,6 +189,8 @@ class GFOn24AddOn extends GFFeedAddOn
      */
     public function feed_settings_fields()
     {
+        $stdTooltip = __('Ensure the ON24 custom fields (i.e., "std1") are used consistently across events. <a href="https://on24.my.site.com/Support/s/article/Connect-Registration-Form-Best-Practices" target="_blank">Learn more</a>', 'on24addon');
+
         return [[
             'title' => esc_html__('On24 Settings', 'on24addon'),
             'fields' => [
@@ -219,7 +221,6 @@ class GFOn24AddOn extends GFFeedAddOn
                             'label' => esc_html__('Email', 'on24addon'),
                             'required' => 1,
                             'field_type' => [ 'email', 'hidden' ],
-                            // 'tooltip' => esc_html__('This is the tooltip', 'on24addon'),
                         ],
                         [
                             'name' => 'firstname',
@@ -229,6 +230,11 @@ class GFOn24AddOn extends GFFeedAddOn
                         [
                             'name' => 'lastname',
                             'label' => esc_html__('Last Name', 'on24addon'),
+                            'required' => 0,
+                        ],
+                        [
+                            'name' => 'job_title',
+                            'label' => esc_html__('Job Title', 'on24addon'),
                             'required' => 0,
                         ],
                         [
@@ -251,6 +257,61 @@ class GFOn24AddOn extends GFFeedAddOn
                             'name' => 'std1',
                             'label' => esc_html__('std1', 'on24addon'),
                             'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std2',
+                            'label' => esc_html__('std2', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std3',
+                            'label' => esc_html__('std3', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std4',
+                            'label' => esc_html__('std4', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std5',
+                            'label' => esc_html__('std5', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std6',
+                            'label' => esc_html__('std6', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std7',
+                            'label' => esc_html__('std7', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std8',
+                            'label' => esc_html__('std8', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std9',
+                            'label' => esc_html__('std9', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
+                        ],
+                        [
+                            'name' => 'std10',
+                            'label' => esc_html__('std10', 'on24addon'),
+                            'required' => 0,
+                            'tooltip' => $stdTooltip,
                         ],
                     ],
                 ],
